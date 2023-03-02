@@ -23,7 +23,7 @@ class RemoteFeedLoaderTests: XCTest {
         
         sut.load()
         
-        XCTAssertEqual(client.requestedURL, url)
+        XCTAssertTrue(client.requestedURLs.isEmpty)
     }
     
     func test_loadTwice_requestsDataFromURLTwice()  {
@@ -48,7 +48,6 @@ class RemoteFeedLoaderTests: XCTest {
         var requestedURLs = [URL]()
         
         func get(from url:URL) {
-            requestedURL = url
             requestedURLs.append(url)
         }
 
