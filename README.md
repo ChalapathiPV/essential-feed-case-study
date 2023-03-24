@@ -1,29 +1,4 @@
 Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@ChalapathiPV 
-essentialdevelopercom
-/
-essential-feed-case-study
-Public
-Fork your own copy of essentialdevelopercom/essential-feed-case-study
-Code
-Pull requests
-Actions
-Security
-Insights
-essential-feed-case-study/README.md
-@caiozullo
-caiozullo Initial commit with feature requirements
-Latest commit d2d783c on Dec 4, 2018
- History
- 1 contributor
-144 lines (107 sloc)  3.06 KB
 
 # Essential Feed App – Image Feed Feature
 
