@@ -1,5 +1,7 @@
 Skip to content
 
+[![CI](https://github.com/ChalapathiPV/essential-feed-case-study/actions/workflows/CI.yml/badge.svg)](https://github.com/ChalapathiPV/essential-feed-case-study/actions/workflows/CI.yml)
+
 # Essential Feed App – Image Feed Feature
 
 ## BDD Specs
