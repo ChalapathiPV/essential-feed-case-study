@@ -13,9 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-
-    - name: Build
-      run: swift build -v
       
     - name: Select Xcode
       run: sude xcode-select -switch /Application/Xcode_14.1.app
