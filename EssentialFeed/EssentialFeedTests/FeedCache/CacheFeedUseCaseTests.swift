@@ -31,7 +31,6 @@ class FeedStore {
     typealias DeletionCompletion = (Error?) -> Void
     
     var deleteCachedFeedCallCount = 0
-    var insertCallcount = 0
     var insertions = [(items: [FeedItem], timestamp: Date)]()
 
     private var deletionCompletions = [DeletionCompletion]()
