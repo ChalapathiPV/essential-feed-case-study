@@ -1,18 +1,18 @@
 //
-//  FeedItem.swift
+//  LocalFeedItem.swift
 //  EssentialFeed
 //
-//  Created by PVC on 01/03/23.
+//  Created by PVC on 11/08/23.
 //
 
 import Foundation
 
-public struct FeedImage: Equatable {
+public struct LocalFeedImage: Equatable {
     public let id: UUID
     public let description: String?
     public let location: String?
     public let url: URL
-    
+
     public init(id: UUID, description: String?, location: String?, url: URL) {
         self.id = id
         self.description = description
