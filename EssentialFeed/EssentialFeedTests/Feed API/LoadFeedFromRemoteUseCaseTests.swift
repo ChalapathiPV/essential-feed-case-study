@@ -61,7 +61,7 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
         let (sut, client) = makeSUT()
         
         expect(sut, toCompleteWith: .failure(RemoteFeedLoader.Error.invalidData), when: {
-            let invalidJSON = Data(bytes: "invalid json".utf8)
+            let invalidJSON = Data("invalid json".utf8)
             client.complete(withStatusCode: 200, data: invalidJSON)
         })
     }
@@ -90,10 +90,10 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
         
         let items = [item1.model, item2.model]
         
-        //        expect(sut, toCompleteWith: .success(items), when: {
-        //            let json = makeItemsJSON([item1.json, item2.json])
-        //            client.complete(withStatusCode: 200, data: json)
-        //        })
+        expect(sut, toCompleteWith: .success(items), when: {
+            let json = makeItemsJSON([item1.json, item2.json])
+            client.complete(withStatusCode: 200, data: json)
+        })
     }
     
     func test_load_doesNotDeliverResultAfterSUTInstanceHasBeenDeallocated() {
