@@ -23,7 +23,7 @@ extension LocalFeedLoader {
         store.deleteCachedFeed { [weak self] error in
             guard let self = self else { return }
             
-            if let cacheDeletionError = error {
+            if let error {
                 completion(error)
             } else {
                 self.cache(feed: feed, with: completion)
