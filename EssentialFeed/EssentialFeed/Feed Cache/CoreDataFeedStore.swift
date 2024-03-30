@@ -1,11 +1,4 @@
-//
-//  CoreDataFeedStore.swift
-//  EssentialFeed
-//
-//  Created by PVC on 18/03/24.
-//
-
-import Foundation
+import CoreData
 
 public final class CoreDataFeedStore: FeedStore {
     public init() {}
@@ -22,4 +15,17 @@ public final class CoreDataFeedStore: FeedStore {
         completion(.empty)
     }
     
+}
+
+private class ManagedCache: NSManagedObject {
+    @NSManaged var timestamp: Date
+    @NSManaged var feed: NSOrderedSet
+}
+
+private class ManagedFeedImage: NSManagedObject {
+    @NSManaged var id: UUID
+    @NSManaged var imageDescription: String?
+    @NSManaged var location: String?
+    @NSManaged var url: URL
+    @NSManaged var cache: ManagedCache
 }
