@@ -230,11 +230,11 @@
 			isa = PBXGroup;
 			children = (
 				E7D135EB2A79AB5E00575851 /* LocalFeedLoader.swift */,
-				E7A9C2C72BA89D3200A71B86 /* CoreDataFeedStore.swift */,
 				E7D135ED2A79AC6D00575851 /* FeedStore.swift */,
 				E78B2FB92A86E944002B6223 /* LocalFeedImage.swift */,
 				E77A81062B461D950080BD32 /* FeedCachePolicy.swift */,
 				E77A810A2B704A680080BD32 /* CodableFeedStore.swift */,
+				E7A9C2C72BA89D3200A71B86 /* CoreDataFeedStore.swift */,
 				E7C5869A2BB62106007A2780 /* FeedStore.xcdatamodeld */,
 			);
 			path = "Feed Cache";
