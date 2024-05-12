@@ -20,8 +20,8 @@ public class URLSessionHTTPClient: HTTPClient {
         session.dataTask(with: url) { data, response, error in
             if let error = error {
                 completion(.failure(error))
-            } else if let data = data, let resposne = response as? HTTPURLResponse {
-                completion(.success(data, response))
+            } else if let data = data, let response = response as? HTTPURLResponse {
+                completion(.success((data, response)))
             } else {
                 completion(.failure(UnexpectedValuesRepresentation()))
             }
