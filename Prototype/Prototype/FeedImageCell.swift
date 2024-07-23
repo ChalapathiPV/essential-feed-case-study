@@ -16,7 +16,9 @@ final class FeedImageCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+
         feedImageView.alpha = 0
+        feedImageContainer.startShimmering()
     }
     
     override func prepareForReuse() {
