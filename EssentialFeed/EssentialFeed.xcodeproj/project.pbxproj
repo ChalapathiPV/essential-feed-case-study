@@ -28,6 +28,7 @@
 		E766EC772B3B9467008C17EC /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E766EC762B3B9467008C17EC /* SharedTestHelpers.swift */; };
 		E77A81072B461D950080BD32 /* FeedCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A81062B461D950080BD32 /* FeedCachePolicy.swift */; };
 		E77AA29E2C7745450066945B /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77AA29D2C7745450066945B /* FeedViewControllerTests.swift */; };
+		E77AA29F2C77EE560066945B /* XCTestCase+MemoryLeakTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEFD6629CBB4400053337C /* XCTestCase+MemoryLeakTracker.swift */; };
 		E78B2FB82A86E8CE002B6223 /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B2FB72A86E8CE002B6223 /* RemoteFeedItem.swift */; };
 		E78B2FBA2A86E944002B6223 /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B2FB92A86E944002B6223 /* LocalFeedImage.swift */; };
 		E7A1B8162C7712E200F5B9EF /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A1B80E2C7712E100F5B9EF /* EssentialFeediOS.framework */; };
@@ -662,6 +663,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E77AA29E2C7745450066945B /* FeedViewControllerTests.swift in Sources */,
+				E77AA29F2C77EE560066945B /* XCTestCase+MemoryLeakTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
