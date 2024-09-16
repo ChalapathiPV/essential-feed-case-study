@@ -63,6 +63,13 @@
 			remoteGlobalIDString = E70F924329B012640012DE2C;
 			remoteInfo = EssentialFeed;
 		};
+		E74481232C981F4B00D87F27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E70F923B29B012630012DE2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E70F924329B012640012DE2C;
+			remoteInfo = EssentialFeed;
+		};
 		E75DBD252BDA4893001882B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E70F923B29B012630012DE2C /* Project object */;
@@ -456,6 +463,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E74481242C981F4B00D87F27 /* PBXTargetDependency */,
 			);
 			name = EssentialFeediOS;
 			productName = EssentialFeediOS;
@@ -688,6 +696,11 @@
 			isa = PBXTargetDependency;
 			target = E70F924329B012640012DE2C /* EssentialFeed */;
 			targetProxy = E72F3F9229B148090011C6E3 /* PBXContainerItemProxy */;
+		};
+		E74481242C981F4B00D87F27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E70F924329B012640012DE2C /* EssentialFeed */;
+			targetProxy = E74481232C981F4B00D87F27 /* PBXContainerItemProxy */;
 		};
 		E75DBD262BDA4893001882B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
