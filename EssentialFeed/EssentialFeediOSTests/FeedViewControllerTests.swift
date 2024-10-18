@@ -187,10 +187,7 @@ final class FeedViewControllerTests: XCTestCase {
             loadedImageURLs.append(url)
             return TaskSpy { [weak self] in self?.cancelledImageURLs.append(url) }
         }
-        
-        func cancelImageDataLoad(from url: URL) {
-            cancelledImageURLs.append(url)
-        }
+
     }
 }
 
