@@ -24,23 +24,22 @@ final class FeedViewControllerTests: XCTestCase {
         XCTAssertEqual(loader.loadFeedCallCount, 3, "Expect yet another loading request once user intiates another reload")
     }
 
-    func test_viewDidLoad_showsLoadingIndicator() {
+    func test_loadingFeedIndicator_isVisibleWhileLoadingFeed() {
         let (sut, loader) = makeSUT()
-
-        sut.loadViewIfNeeded()
-        sut.replaceRefreshControlWithFakeForiOS17support()
-        XCTAssertFalse(sut.isShowingLoadingIndicator, "Expecting loading indicator once view is loaded")
-  
+        
+        sut.simulateAppearance()
+        XCTAssertTrue(sut.isShowingLoadingIndicator, "Expected loading indicator once view is loaded")
+        
         loader.completeFeedLoading(at: 0)
-        XCTAssertFalse(sut.isShowingLoadingIndicator, "Expecting no loading indicator once loading copletes successfully")
-
+        XCTAssertFalse(sut.isShowingLoadingIndicator, "Expected no loading indicator once loading completes successfully")
+        
         sut.simulateUserInitiatedFeedReload()
-        XCTAssertTrue(sut.isShowingLoadingIndicator, "Expecting loading indicator once user initiates a reload")
+        XCTAssertTrue(sut.isShowingLoadingIndicator, "Expected loading indicator once user initiates a reload")
         
         loader.completeFeedLoadingWithError(at: 1)
-        XCTAssertFalse(sut.isShowingLoadingIndicator, "Expecting no loading indicator once user initiated loading completes with error")
+        XCTAssertFalse(sut.isShowingLoadingIndicator, "Expected no loading indicator once user initiated loading completes with error")
     }
-    
+
     func test_loadFeedCompletion_rendersSuccessfullyLoadedFeed() {
         let image0 = makeImage(description: "a description", location: "location")
         let image1 = makeImage(description: nil , location: "another location")
@@ -257,6 +256,15 @@ final class FeedViewControllerTests: XCTestCase {
 }
 
 private extension FeedViewController {
+
+    func simulateAppearance() {
+        if !isViewLoaded {
+            loadViewIfNeeded()
+            replaceRefreshControlWithFakeForiOS17support()
+        }
+        beginAppearanceTransition(true, animated: false)
+        endAppearanceTransition()
+    }
 
     func replaceRefreshControlWithFakeForiOS17support() {
         let fake = FakeRefreshControl()
