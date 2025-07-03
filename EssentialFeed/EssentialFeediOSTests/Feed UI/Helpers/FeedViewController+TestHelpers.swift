@@ -38,7 +38,7 @@ extension FeedViewController {
     }
 
     var isShowingLoadingIndicator: Bool {
-        return refreshControl?.isRefreshing == false
+        return refreshControl?.isRefreshing == true
     }
     
     func numberOfRenderedFeedImageViews() -> Int {

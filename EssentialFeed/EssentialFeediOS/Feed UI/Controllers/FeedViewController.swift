@@ -23,6 +23,7 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
         
         tableView.prefetchDataSource = self
         refreshControl = refreshController?.view
+        
         onViewIsAppearing = { vc in
             vc.onViewIsAppearing = nil
             vc.refreshController?.refresh()
