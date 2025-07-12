@@ -1,5 +1,4 @@
 import UIKit
-import EssentialFeed
 
 public final class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching {
 
@@ -21,8 +20,8 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.prefetchDataSource = self
         refreshControl = refreshController?.view
+        tableView.prefetchDataSource = self
         
         onViewIsAppearing = { vc in
             vc.onViewIsAppearing = nil
