@@ -131,6 +131,7 @@ Description Description</string>
                         <connections>
                             <outlet property="dataSource" destination="SvX-1e-Im1" id="jVK-a4-48f"/>
                             <outlet property="delegate" destination="SvX-1e-Im1" id="gOU-8J-EZS"/>
+                            <outlet property="prefetchDataSource" destination="SvX-1e-Im1" id="x3k-ce-hDf"/>
                         </connections>
                     </tableView>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="78X-ay-ysH">
