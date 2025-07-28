@@ -2,7 +2,6 @@
 //  FeedImageCell+TestHelpers.swift
 //  EssentialFeediOSTests
 //
-//  Created by PVC on 08/12/24.
 //
 
 import UIKit

@@ -2,7 +2,6 @@
 //  FeedItemsMapper.swift
 //  EssentialFeed
 //
-//  Created by PVC on 13/03/23.
 //
 
 import Foundation

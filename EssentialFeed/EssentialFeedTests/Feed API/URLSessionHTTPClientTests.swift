@@ -2,7 +2,6 @@
 //  URLSessionHTTPClientTests.swift
 //  EssentialFeedTests
 //
-//  Created by PVC on 16/03/23.
 //
 import XCTest
 import EssentialFeed

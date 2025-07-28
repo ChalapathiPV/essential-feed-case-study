@@ -2,7 +2,6 @@
 //  EssentialFeedAPIEndToEndTests.swift
 //  EssentialFeedAPIEndToEndTests
 //
-//  Created by PVC on 23/03/23.
 //
 
 import XCTest
