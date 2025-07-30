@@ -2,7 +2,6 @@
 //  XCTestCase+MemoryLeakTracker.swift
 //  EssentialFeedTests
 //
-//  Created by PVC on 22/03/23.
 //
 
 import XCTest

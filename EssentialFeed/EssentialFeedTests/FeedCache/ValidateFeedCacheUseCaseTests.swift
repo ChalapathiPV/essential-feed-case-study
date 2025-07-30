@@ -2,7 +2,6 @@
 //  ValidateFeedCacheUseCaseTests.swift
 //  EssentialFeedTests
 //
-//  Created by PVC on 20/12/23.
 //
 
 import XCTest

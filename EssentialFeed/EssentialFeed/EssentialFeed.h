@@ -2,7 +2,6 @@
 //  EssentialFeed.h
 //  EssentialFeed
 //
-//  Created by PVC on 01/03/23.
 //
 
 #import <Foundation/Foundation.h>

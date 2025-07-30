@@ -2,7 +2,6 @@
 //  RemoteFeedLoaderTests.swift
 //  EssentialFeedTests
 //
-//  Created by PVC on 02/03/23.
 //
 
 import XCTest

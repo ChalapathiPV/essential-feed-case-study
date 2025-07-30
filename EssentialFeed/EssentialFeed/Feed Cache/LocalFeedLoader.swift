@@ -2,7 +2,6 @@
 //  LocalFeedLoader.swift
 //  EssentialFeed
 //
-//  Created by PVC on 01/08/23.
 //
 
 import Foundation

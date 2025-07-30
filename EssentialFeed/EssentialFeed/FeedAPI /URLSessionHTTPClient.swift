@@ -2,7 +2,6 @@
 //  URLSessionHTTPClient.swift
 //  EssentialFeed
 //
-//  Created by PVC on 23/03/23.
 //
 
 import Foundation
