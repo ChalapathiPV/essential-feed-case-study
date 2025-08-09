@@ -159,6 +159,7 @@
 		E78A9B802E47A5EA005D9206 /* FeedViewControllerTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewControllerTests+Localization.swift"; sourceTree = "<group>"; };
 		E78A9B842E47AC10005D9206 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		E78A9B872E47AE17005D9206 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
+		E78A9B882E47AE86005D9206 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
 		E78B2FB72A86E8CE002B6223 /* RemoteFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedItem.swift; sourceTree = "<group>"; };
 		E78B2FB92A86E944002B6223 /* LocalFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImage.swift; sourceTree = "<group>"; };
 		E78BCF692C8519CD00FAF85D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -672,6 +673,7 @@
 				en,
 				Base,
 				"pt-BR",
+				el,
 			);
 			mainGroup = E70F923A29B012630012DE2C;
 			preferredProjectObjectVersion = 90;
@@ -854,6 +856,7 @@
 			children = (
 				E78A9B842E47AC10005D9206 /* en */,
 				E78A9B872E47AE17005D9206 /* pt-BR */,
+				E78A9B882E47AE86005D9206 /* el */,
 			);
 			name = Feed.strings;
 			sourceTree = "<group>";
