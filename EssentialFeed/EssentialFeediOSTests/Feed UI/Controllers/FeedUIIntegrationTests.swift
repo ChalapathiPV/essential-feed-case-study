@@ -279,7 +279,7 @@ final class FeedUIIntegrationTests: XCTestCase {
         _ = sut.simulateFeedImageViewVisible(at: 0)
         
         let exp = expectation(description: "Wait for background queue")
-        DispatchQueue.global().async {
+        DispatchQueue.main.async {
             loader.completeImageLoading(with: self.anyImageData(), at: 0)
             exp.fulfill()
         }
