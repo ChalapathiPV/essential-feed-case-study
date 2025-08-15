@@ -22,6 +22,11 @@
 		E72F3F9129B148090011C6E3 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70F924429B012640012DE2C /* EssentialFeed.framework */; };
 		E72F3F9829B148650011C6E3 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72F3F9729B148650011C6E3 /* LoadFeedFromRemoteUseCaseTests.swift */; };
 		E72F3F9B29B15F990011C6E3 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72F3F9A29B15F990011C6E3 /* RemoteFeedLoader.swift */; };
+		E7360B222E4D0FF500037186 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7360B212E4D0FF500037186 /* MainQueueDispatchDecorator.swift */; };
+		E7360B242E4D10D700037186 /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7360B232E4D10D700037186 /* WeakRefVirtualProxy.swift */; };
+		E7360B262E4D117400037186 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7360B252E4D117400037186 /* FeedImageDataLoaderPresentationAdapter.swift */; };
+		E7360B282E4D11F100037186 /* FeedLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7360B272E4D11F100037186 /* FeedLoaderPresentationAdapter.swift */; };
+		E7360B2A2E4D125100037186 /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7360B292E4D125100037186 /* FeedViewAdapter.swift */; };
 		E739E9D72E284DEC0016980F /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E739E9D62E284DEB0016980F /* FeedPresenter.swift */; };
 		E739E9D92E2C0A630016980F /* FeedImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E739E9D82E2C0A630016980F /* FeedImagePresenter.swift */; };
 		E739E9DB2E2C0EA30016980F /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E739E9DA2E2C0EA30016980F /* FeedViewModel.swift */; };
@@ -135,6 +140,11 @@
 		E72F3F8D29B148090011C6E3 /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72F3F9729B148650011C6E3 /* LoadFeedFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
 		E72F3F9A29B15F990011C6E3 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
+		E7360B212E4D0FF500037186 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
+		E7360B232E4D10D700037186 /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
+		E7360B252E4D117400037186 /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
+		E7360B272E4D11F100037186 /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
+		E7360B292E4D125100037186 /* FeedViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewAdapter.swift; sourceTree = "<group>"; };
 		E739E9D62E284DEB0016980F /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		E739E9D82E2C0A630016980F /* FeedImagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImagePresenter.swift; sourceTree = "<group>"; };
 		E739E9DA2E2C0EA30016980F /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
@@ -462,6 +472,11 @@
 			isa = PBXGroup;
 			children = (
 				E7AB33182D330F3200620D6A /* FeedUIComposer.swift */,
+				E7360B292E4D125100037186 /* FeedViewAdapter.swift */,
+				E7360B272E4D11F100037186 /* FeedLoaderPresentationAdapter.swift */,
+				E7360B252E4D117400037186 /* FeedImageDataLoaderPresentationAdapter.swift */,
+				E7360B212E4D0FF500037186 /* MainQueueDispatchDecorator.swift */,
+				E7360B232E4D10D700037186 /* WeakRefVirtualProxy.swift */,
 			);
 			path = Composers;
 			sourceTree = "<group>";
@@ -836,12 +851,17 @@
 				E7AD99DE2E38277000CDED3A /* UITableView+Dequeueing.swift in Sources */,
 				E739E9D92E2C0A630016980F /* FeedImagePresenter.swift in Sources */,
 				E739E9DB2E2C0EA30016980F /* FeedViewModel.swift in Sources */,
+				E7360B282E4D11F100037186 /* FeedLoaderPresentationAdapter.swift in Sources */,
 				E78BCF6A2C8519CD00FAF85D /* FeedViewController.swift in Sources */,
+				E7360B242E4D10D700037186 /* WeakRefVirtualProxy.swift in Sources */,
 				E7AD99E02E3829C200CDED3A /* UIImageView+Animations.swift in Sources */,
+				E7360B222E4D0FF500037186 /* MainQueueDispatchDecorator.swift in Sources */,
 				E739E9DD2E2C0ECF0016980F /* FeedLoadingViewModel.swift in Sources */,
 				E7800AE52CAD2AA100E34C7F /* FeedImageCell.swift in Sources */,
+				E7360B262E4D117400037186 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				E7885CDF2E1F13E8003E2B74 /* FeedImageViewModel.swift in Sources */,
 				E77FFF632D156A7C00A9295B /* FeedImageCellController.swift in Sources */,
+				E7360B2A2E4D125100037186 /* FeedViewAdapter.swift in Sources */,
 				E7AB33192D330F3200620D6A /* FeedUIComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -978,6 +998,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1207,7 +1228,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1249,7 +1270,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
